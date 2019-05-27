@@ -68,14 +68,7 @@ export default class UserInput extends React.Component {
       this.state.latitude,
       this.state.longitude,
       this.state.cuisine
-    ).then(data => {
-      this.setState({
-        latitude: lat,
-        longitude: lng,
-        results: data,
-        cuisine: cuisine
-      });
-    });
+    );
   };
 
   render() {
